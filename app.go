@@ -26,7 +26,7 @@ func (a App) Run(v turbine.Turbine) error {
 		return err
 	}
 
-	rr, err := source.Records("customer_data", nil)
+	rr, err := source.Records("categories", nil)
 	if err != nil {
 		return err
 	}

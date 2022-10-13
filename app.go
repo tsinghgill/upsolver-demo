@@ -21,7 +21,7 @@ type App struct{}
 
 func (a App) Run(v turbine.Turbine) error {
 
-	source, err := v.Resources("upsolver_postgres")
+	source, err := v.Resources("upsolver_rds")
 	if err != nil {
 		return err
 	}
